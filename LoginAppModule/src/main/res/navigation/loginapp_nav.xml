@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginapp_nav"
+    app:startDestination="@id/fragmentSample1">
+
+    <fragment
+        android:id="@+id/fragmentSample1"
+        android:name="com.example.loginappmodule.FragmentSample1"
+        android:label="fragment_sample1"
+        tools:layout="@layout/fragment_sample1" >
+        <deepLink
+            android:id="@+id/library_deep_link_fragment1"
+            app:uri="android-app://com.example.loginappmodule/fragmentSample1" />
+        <action
+            android:id="@+id/action_fragmentSample1_to_fragmentSample2"
+            app:destination="@id/fragmentSample2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentSample2"
+        android:name="com.example.loginappmodule.FragmentSample2"
+        android:label="fragment_sample2"
+        tools:layout="@layout/fragment_sample2" >
+
+        <deepLink
+            android:id="@+id/library_deep_link_fragment2"
+            app:uri="android-app://com.example.loginappmodule/fragmentSample2" />
+
+    </fragment>
+</navigation>

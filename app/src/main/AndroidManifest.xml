@@ -11,19 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginApp"
+        tools:replace="android:theme, android:icon"
         tools:targetApi="31" >
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true"
+            android:launchMode="singleTop">
+            <nav-graph android:value="@navigation/app_nav" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data
+                    android:scheme="myapp"
+                    android:host="library" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
