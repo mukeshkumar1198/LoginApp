@@ -3,29 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/loginapp_nav"
-    app:startDestination="@id/fragmentSample1">
+    app:startDestination="@id/fragmentsample1">
 
     <fragment
-        android:id="@+id/fragmentSample1"
+        android:id="@+id/fragmentsample1"
         android:name="com.example.loginappmodule.FragmentSample1"
         android:label="fragment_sample1"
         tools:layout="@layout/fragment_sample1" >
         <deepLink
             android:id="@+id/library_deep_link_fragment1"
-            app:uri="android-app://com.example.loginappmodule/fragmentSample1" />
+            app:uri="com.example.loginappmodule://fragmentSample1" />
         <action
             android:id="@+id/action_fragmentSample1_to_fragmentSample2"
-            app:destination="@id/fragmentSample2" />
+            app:destination="@id/fragmentsample2" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentSample2"
+        android:id="@+id/fragmentsample2"
         android:name="com.example.loginappmodule.FragmentSample2"
         android:label="fragment_sample2"
         tools:layout="@layout/fragment_sample2" >
 
         <deepLink
             android:id="@+id/library_deep_link_fragment2"
-            app:uri="android-app://com.example.loginappmodule/fragmentSample2" />
+            app:uri="com.example.loginappmodule://fragmentSample2" />
 
     </fragment>
 </navigation>
