@@ -36,7 +36,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.Mukesh1198"
             artifactId = "loginappModule"
-            version = "1.0.3"
+            version = "1.0.4"
 
             pom {
                 name.set("My Library")
