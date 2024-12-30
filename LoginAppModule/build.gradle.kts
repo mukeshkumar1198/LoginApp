@@ -34,34 +34,9 @@ android {
 publishing {
     publications {
         register<MavenPublication>("release") {
-            groupId = "com.github.Mukesh1198"
+            groupId = "com.mukesh1198"
             artifactId = "loginappModule"
-            version = "1.0.4"
-
-            pom {
-                name.set("My Library")
-                description.set("A sample library for demonstration")
-                url.set("https://github.com/mukeshkumar1198/LoginApp")
-
-                licenses {
-                    license {
-                        name.set("Apache-2.0")
-                        url.set("https://opensource.org/licenses/Apache-2.0")
-                    }
-                }
-                developers {
-                    developer {
-                        id.set("Mukesh1198")
-                        name.set("Mukesh")
-                        email.set("mukesh.k@tamilzorous.com")
-                    }
-                }
-                scm {
-                    connection.set("scm:git:git://github.com/mukeshkumar1198/LoginApp.git")
-                    developerConnection.set("scm:git:ssh://github.com/mukeshkumar1198/LoginApp.git")
-                    url.set("https://github.com/mukeshkumar1198/LoginApp")
-                }
-            }
+            version = "1.0.5"
         }
     }
 }

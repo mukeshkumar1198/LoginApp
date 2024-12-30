@@ -1,4 +1,4 @@
-package com.example.loginappmodule
+package com.mukesh1198.loginappmodule
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

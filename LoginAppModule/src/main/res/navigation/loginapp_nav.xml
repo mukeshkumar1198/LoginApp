@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentsample1"
-        android:name="com.example.loginappmodule.FragmentSample1"
+        android:name="com.mukesh1198.loginappmodule.FragmentSample1"
         android:label="fragment_sample1"
         tools:layout="@layout/fragment_sample1" >
         <deepLink
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentsample2"
-        android:name="com.example.loginappmodule.FragmentSample2"
+        android:name="com.mukesh1198.loginappmodule.FragmentSample2"
         android:label="fragment_sample2"
         tools:layout="@layout/fragment_sample2" >
 

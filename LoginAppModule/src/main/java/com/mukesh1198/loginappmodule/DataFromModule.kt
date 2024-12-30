@@ -1,4 +1,4 @@
-package com.example.loginappmodule
+package com.mukesh1198.loginappmodule
 
 data class DataFromLoginModule (
     val data: String,

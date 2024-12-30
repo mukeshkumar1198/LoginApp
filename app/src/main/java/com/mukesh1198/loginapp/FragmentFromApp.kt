@@ -1,4 +1,4 @@
-package com.example.loginapp
+package com.mukesh1198.loginapp
 
 import android.net.Uri
 import android.os.Bundle
@@ -35,8 +35,7 @@ class FragmentFromApp : Fragment() {
             val deepLinkUri = Uri.parse("com.example.loginappmodule://fragmentSample2")
             findNavController().navigate(deepLinkUri)
 
-//            navController = findNavController()
-//            navController.navigate(R.id.action_fragmentFromApp_to_loginapp_nav)
+
         }
     }
 
