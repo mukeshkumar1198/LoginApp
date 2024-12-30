@@ -40,11 +40,11 @@ publishing {
         }
     }
     publications {
-        register<MavenPublication>("release") {
+        create<MavenPublication>("maven") {
             artifact(layout.buildDirectory.file("outputs/aar/LoginAppModule-release.aar"))
             groupId = "com.mukesh1198"
             artifactId = "loginappModule"
-            version = "1.0.6"
+            version = "1.0.7"
 
 
         }
