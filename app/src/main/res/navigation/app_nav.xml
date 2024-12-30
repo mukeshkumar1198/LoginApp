@@ -5,7 +5,6 @@
     android:id="@+id/app_nav"
     app:startDestination="@id/fragmentFromApp">
 
-    <include app:graph="@navigation/loginapp_nav" />
 
     <fragment
         android:id="@+id/fragmentFromApp"
@@ -13,9 +12,9 @@
         android:label="fragment_from_app"
         tools:layout="@layout/fragment_from_app" >
 
-        <action
-            android:id="@+id/action_fragmentFromApp_to_loginapp_nav"
-            app:destination="@id/loginapp_nav" />
+<!--        <action-->
+<!--            android:id="@+id/action_fragmentFromApp_to_loginapp_nav"-->
+<!--            app:destination="@id/loginapp_nav" />-->
 
     </fragment>
 
