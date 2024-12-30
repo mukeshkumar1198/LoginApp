@@ -24,4 +24,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "LoginApp"
 include(":app")
-include(":LoginAppModule")
+include(":loginAppModule")

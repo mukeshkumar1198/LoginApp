@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_sample1" >
         <deepLink
             android:id="@+id/library_deep_link_fragment1"
-            app:uri="com.example.loginappmodule://fragmentSample1" />
+            app:uri="com.mukesh1198.loginappmodule://fragmentSample1" />
         <action
             android:id="@+id/action_fragmentSample1_to_fragmentSample2"
             app:destination="@id/fragmentsample2" />
@@ -25,7 +25,7 @@
 
         <deepLink
             android:id="@+id/library_deep_link_fragment2"
-            app:uri="com.example.loginappmodule://fragmentSample2" />
+            app:uri="com.mukesh1198.loginappmodule://fragmentSample2" />
 
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.mukesh1198.loginapp
+package com.example.loginapp
 
 import android.net.Uri
 import android.os.Bundle
@@ -32,7 +32,7 @@ class FragmentFromApp : Fragment() {
         // Use the binding object to access views
         binding.openLibraryFramgment.setOnClickListener {
 
-            val deepLinkUri = Uri.parse("com.example.loginappmodule://fragmentSample2")
+            val deepLinkUri = Uri.parse("com.mukesh1198.loginappmodule://fragmentSample2")
             findNavController().navigate(deepLinkUri)
 
 
