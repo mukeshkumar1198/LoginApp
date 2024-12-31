@@ -50,7 +50,7 @@ publishing {
             artifact(layout.buildDirectory.file("outputs/aar/LoginAppModule-release.aar"))
             groupId = "com.mukesh1198"
             artifactId = "loginappModule"
-            version = "1.0.8"
+            version = "1.0.9"
 
 
         }
