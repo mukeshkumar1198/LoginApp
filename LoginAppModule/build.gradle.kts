@@ -1,6 +1,7 @@
 plugins {
     id("com.android.library")
     id("maven-publish")
+    alias(libs.plugins.kotlin.android)
 }
 android {
     namespace = "com.example.loginappmodule"
@@ -26,7 +27,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-
+    buildFeatures {
+        viewBinding = true
+    }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
 }
 publishing {
     repositories {
@@ -44,7 +50,7 @@ publishing {
             artifact(layout.buildDirectory.file("outputs/aar/LoginAppModule-release.aar"))
             groupId = "com.mukesh1198"
             artifactId = "loginappModule"
-            version = "1.0.7"
+            version = "1.0.8"
 
 
         }
